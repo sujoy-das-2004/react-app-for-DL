@@ -1,0 +1,395 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+
+.toast.error {
+  background-color: #dc3545;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* Awareness Section */
+.awareness {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.awareness h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.awareness p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Upload Section */
+.upload-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.upload-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.upload-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-section button:hover {
+  background-color: #0056b3;
+}
+
+.upload-section .spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.image-preview img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Prediction Result */
+.prediction-result {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.prediction-result img {
+  max-width: 200px;
+  margin-top: 15px;
+}
+
+/* Prevention & Info Sections */
+.prevention-tips,
+.statistics,
+.contact-info,
+.resources {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.prevention-tips ul,
+.statistics ul,
+.resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.prevention-tips ul li,
+.statistics ul li,
+.resources ul li {
+  margin-bottom: 8px;
+}
+
+.resources a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* Image Styling */
+.tabaco {
+  width: 25vw;
+}
+
+.logo-img {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo1 {
+  width: 5vw;
+  height: 5vw;
+}
+
+.logo2 {
+  height: 3.5vw;
+}
+
+/* Blog Section */
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+.blog-item{
+  display: flex;
+}
+
+.blog-thumbnail {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.blog-content {
+  flex: 1;
+  text-align: left;
+}
+.blog-content a{
+  color: #3498db;
+  text-decoration: none;
+}
+.blog-content a:hover{
+  color: #0bc23c;
+  text-decoration: none;
+}
+.blog-content h4 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .upload-section {
+    padding: 20px;
+  }
+
+  .upload-section input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .upload-section button {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .prediction-result,
+  .prevention-tips,
+  .statistics,
+  .resources {
+    padding: 20px;
+  }
+
+  .image-preview img {
+    max-width: 250px;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+/* src/App.css */
+
+/* General Footer Styling */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+.footer-logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links,
+.footer-social {
+  width: 30%;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #f0a500;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsiveness for Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footer-logo-img {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .footer-links,
+  .footer-social {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+.main-logo {
+  margin-top: 5vw;
+  width: 20vw;
+  transition: box-shadow 0.5s ease; /* Adds a smooth transition effect */
+  border-radius: 100%; /* Makes the logo circular */
+}
+
+.main-logo:hover {
+  box-shadow: 0 0 15px 15px rgba(183, 213, 171, 0.6); /* Circular shadow with blue color */
+}
