@@ -247,52 +247,7 @@ h1, h2, h3 {
   margin-top: 5px;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .App {
-    padding: 10px;
-  }
-
-  .upload-section {
-    padding: 20px;
-  }
-
-  .upload-section input[type="file"] {
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
-  .upload-section button {
-    padding: 12px;
-    font-size: 1.1rem;
-  }
-
-  .prediction-result,
-  .prevention-tips,
-  .statistics,
-  .resources {
-    padding: 20px;
-  }
-
-  .image-preview img {
-    max-width: 250px;
-  }
-
-  .blog-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .blog-thumbnail {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-}
-/* src/App.css */
-
-/* General Footer Styling */
+/* Footer Styling */
 .footer {
   background-color: #111;
   color: #fff;
@@ -382,14 +337,102 @@ h1, h2, h3 {
   }
 }
 
-
+/* Main Logo Styling */
 .main-logo {
   margin-top: 5vw;
   width: 20vw;
-  transition: box-shadow 0.5s ease; /* Adds a smooth transition effect */
-  border-radius: 100%; /* Makes the logo circular */
+  transition: box-shadow 0.5s ease;
+  border-radius: 100%;
 }
 
 .main-logo:hover {
-  box-shadow: 0 0 15px 15px rgba(183, 213, 171, 0.6); /* Circular shadow with blue color */
+  box-shadow: 0 0 15px 15px rgba(183, 213, 171, 0.6);
+}
+
+/* Extra Small Devices (Phones, 480px and below) */
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  .upload-section {
+    padding: 15px;
+  }
+
+  .upload-section input[type="file"] {
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .upload-section button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .prediction-result,
+  .prevention-tips,
+  .statistics,
+  .resources {
+    padding: 15px;
+  }
+
+  .image-preview img {
+    max-width: 200px;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+.blog-item{
+  flex-direction: column;
+}
+  .blog-content h4 {
+    font-size: 16px;
+  }
+
+  .blog-content p {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .footer-logo-img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links,
+  .footer-social {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-links li,
+  .footer-social li {
+    margin: 3px 0;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    font-size: 14px;
+  }
+
+  .main-logo {
+    margin-top: 8vw;
+    width: 30vw;
+  }
 }
